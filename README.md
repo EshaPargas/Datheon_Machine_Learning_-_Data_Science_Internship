@@ -8,7 +8,7 @@ This repository contains my completed tasks for the Datheon Machine Learning & D
 .
 ├── README.md
 ├── requirements.txt
-└── task_02_multi_class_classification/
+└── task_01_multi_class_classification/
     └── iris_classification_pipeline.ipynb
 ```
 
