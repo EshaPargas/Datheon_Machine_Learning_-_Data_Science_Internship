@@ -18,7 +18,7 @@ This repository contains my completed tasks for the Datheon Machine Learning & D
 
 ```bash
 git clone https://github.com/EshaPargas/Datheon_Machine_Learning_-_Data_Science_Internship.git
-cd <this-repo>
+cd Datheon_Machine_Learning_-_Data_Science_Internship
 pip install -r requirements.txt
 jupyter notebook
 ```
