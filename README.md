@@ -17,7 +17,7 @@ This repository contains my completed tasks for the Datheon Machine Learning & D
 ## Setup
 
 ```bash
-git clone https://github.com/<your-username>/<this-repo>.git
+git clone https://github.com/EshaPargas/Datheon_Machine_Learning_-_Data_Science_Internship.git
 cd <this-repo>
 pip install -r requirements.txt
 jupyter notebook
@@ -27,7 +27,7 @@ jupyter notebook
 
 ### Multi-Class Benchmark Classification Pipeline (Iris)
 
-**Folder:** `task_02_multi_class_classification/`
+**Folder:** `task_01_multi_class_classification/`
 
 An end-to-end supervised classification pipeline on the Iris dataset using Python, Pandas, Scikit-Learn, Seaborn and Matplotlib.
 
