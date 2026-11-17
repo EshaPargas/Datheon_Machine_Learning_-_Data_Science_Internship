@@ -3,4 +3,5 @@ pandas
 scikit-learn
 matplotlib
 seaborn
+jinja2
 jupyter
