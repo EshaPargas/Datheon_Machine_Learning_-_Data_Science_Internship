@@ -8,10 +8,12 @@ This repository contains my completed tasks for the Datheon Machine Learning & D
 .
 ├── README.md
 ├── requirements.txt
-└── task_01_multi_class_classification/
-    └── iris_classification_pipeline.ipynb
-└── task_02_house_price_regression/
-    └── house_price_regression.ipynb
+├── task_01_multi_class_classification/
+│   └── iris_classification_pipeline.ipynb
+├── task_02_house_price_regression/
+│   └── house_price_regression.ipynb
+└── task_04_nlp_sentiment_classification/
+    └── nlp_sentiment_classification.ipynb
 ```
 
 > Each additional completed task goes in its own folder (`task_XX_name/`) with its notebook or source code, and gets its own section below.
@@ -68,3 +70,22 @@ Predicts median house values on the California Housing dataset and compares thre
 - Plots predicted vs. actual values, residual distributions, residuals vs. predicted, and a coefficient comparison showing which features Lasso removes
 
 **Results: the notebook prints the full benchmark table (RMSE, MAE, R²) for all three models when run.**
+
+
+### NLP Sentiment Classification on Customer Reviews (TF-IDF)
+
+**Folder:** `task_04_nlp_sentiment_classification/`
+
+A text classifier that labels customer reviews as positive or negative, built with Scikit-Learn and NLTK.
+
+**What it does**
+
+- Loads the review dataset with Pandas and detects the text and label columns automatically
+- Cleans the text: removes HTML tags and URLs, lowercases, expands contractions, strips punctuation, removes stopwords (keeping negations like "not"), and lemmatizes with NLTK
+- Converts text to TF-IDF features with TfidfVectorizer(max_features=5000) (unigrams and bigrams), fitted on the training set only
+- Trains MultinomialNB and LogisticRegression on a stratified 80/20 split
+- Benchmarks accuracy, precision, recall, F1 and ROC-AUC, with confusion matrices, ROC curves, 5-fold cross-validation and a small hyperparameter search
+- Shows the most influential words per class and examples of misclassified reviews
+- Provides predict_sentiment() for custom phrases and an interactive_test() helper that takes live input
+
+**Results: the notebook prints the full benchmark tables for both models when run.**
