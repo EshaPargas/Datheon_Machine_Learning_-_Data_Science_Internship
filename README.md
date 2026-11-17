@@ -59,12 +59,12 @@ Predicts median house values on the California Housing dataset and compares thre
 
 **What it does**
 
-Loads the data with Pandas, imputes missing total_bedrooms values (median), and plots a correlation heatmap
-Engineers ratio features (rooms, bedrooms and population per household) and interaction features (income x rooms per household, income x house age, latitude x longitude)
-Standardizes numeric features and one-hot encodes ocean_proximity, all inside a Scikit-Learn Pipeline so there is no data leakage
-Diagnoses multicollinearity with Variance Inflation Factors (VIF)
-Fits OLS, plus Ridge (L2) and Lasso (L1) tuned with GridSearchCV (5-fold CV over a wide alpha range)
-Benchmarks RMSE, MAE and R² on a held-out 20% test set
-Plots predicted vs. actual values, residual distributions, residuals vs. predicted, and a coefficient comparison showing which features Lasso removes
+- Loads the data with Pandas, imputes missing total_bedrooms values (median), and plots a correlation heatmap
+- Engineers ratio features (rooms, bedrooms and population per household) and interaction features (income x rooms per household, income x house age, latitude x longitude)
+- Standardizes numeric features and one-hot encodes ocean_proximity, all inside a Scikit-Learn Pipeline so there is no data leakage
+- Diagnoses multicollinearity with Variance Inflation Factors (VIF)
+- Fits OLS, plus Ridge (L2) and Lasso (L1) tuned with GridSearchCV (5-fold CV over a wide alpha range)
+- Benchmarks RMSE, MAE and R² on a held-out 20% test set
+- Plots predicted vs. actual values, residual distributions, residuals vs. predicted, and a coefficient comparison showing which features Lasso removes
 
 **Results: the notebook prints the full benchmark table (RMSE, MAE, R²) for all three models when run.**
